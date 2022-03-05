@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'Design Systems Brasileiros',
-  domain: 'designsystemsbrasileiros.vercel.app',
+  domain: 'designsystemsbrasileiros.com',
   author: 'Bruna Bites',
   personalGithub: 'brunabites',
   // open graph metadata (optional)
