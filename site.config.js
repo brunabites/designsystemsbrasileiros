@@ -11,6 +11,7 @@ module.exports = {
   domain: 'designsystemsbrasileiros.com',
   author: 'Bruna Bites',
   personalGithub: 'brunabites',
+  
   // open graph metadata (optional)
   description: 'Uma lista de design System construídos no Brasil!',
   socialImageTitle: 'Design Systems Brasileiros',
