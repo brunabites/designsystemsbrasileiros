@@ -26,7 +26,18 @@ export const Footer: React.FC<{
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2021 {config.author}</div>
+      <div className={styles.copyright}>© 2022 <a
+
+          className={styles.github}
+          href={`https://github.com/${config.personalGithub}`}
+          title={`GitHub @${config.personalGithub}`}
+          target='_blank'
+          rel='noopener noreferrer'
+          >
+          {config.author}
+
+        </a>
+      </div>
 
       {hasMounted ? (
         <div className={styles.settings}>
