@@ -220,14 +220,14 @@
   display: none !important;
 }
 
-.notion-row.notion-block-d2a991be80fc49fc885de300e1fb503e {
+.notion-row.notion-block-c5a785b6a68e45d5841c15e03cd1f2f6 {
   position: fixed;
   margin: -230px 200px;
   z-index: 9999;
 }
 
 @media only screen and (max-width: 900px) {
-  .notion-row.notion-block-d2a991be80fc49fc885de300e1fb503e {
+  .notion-row.notion-block-c5a785b6a68e45d5841c15e03cd1f2f6 {
     position: fixed;
     margin: -205px 0px;
     z-index: 1;
