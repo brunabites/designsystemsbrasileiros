@@ -222,17 +222,32 @@
 
 .notion-row.notion-block-c5a785b6a68e45d5841c15e03cd1f2f6 {
   position: fixed;
-  margin: -230px 200px;
+  margin: -255px 255px;
   z-index: 9999;
 }
 
 @media only screen and (max-width: 900px) {
   .notion-row.notion-block-c5a785b6a68e45d5841c15e03cd1f2f6 {
     position: fixed;
-    margin: -205px 0px;
+    margin: -205px -12px;
     z-index: 1;
     background: hsla(0,0%,100%,.8);
     backdrop-filter: saturate(180%) blur(16px);
+    padding: 0 12px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .notion-row.notion-block-c5a785b6a68e45d5841c15e03cd1f2f6 {
+    position: relative;
+    margin: 0px;
+    z-index: 1;
+    background: none;
+    backdrop-filter: none
+  }
+  .notion-row.notion-block-c5a785b6a68e45d5841c15e03cd1f2f6 .notion-column {
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }
 
@@ -245,6 +260,10 @@
 .notion-page-no-cover h1.notion-title {
   display: block;
   margin: 2em 0 0 !important;
+}
+
+.notion-page-no-cover h1.notion-title::before {
+  content: ""
 }
 
 h1.notion-title {
@@ -479,4 +498,13 @@ h4.notion-block-d01146f637be46e6846957f1fe81d6b6 {
 .styles_githubCorner__1WYyN,
 .notion-aside {
   display: none !important;
+}
+
+footer .styles_copyright__3kWHj {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.styles_social__235gY a {
+  font-size: 1.2em !important;
 }
