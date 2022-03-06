@@ -15,7 +15,7 @@ module.exports = {
   // open graph metadata (optional)
   description: 'Uma lista de design System construídos no Brasil!',
   socialImageTitle: 'Design Systems Brasileiros',
-  socialImageSubtitle: 'Uma lista de design System construídos no Brasil! 🇧🇷',
+  socialImageSubtitle: 'Uma lista de Design Systems construídos no Brasil! 🇧🇷',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
