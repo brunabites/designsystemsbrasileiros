@@ -13,7 +13,7 @@ module.exports = {
   personalGithub: 'brunabites',
   
   // open graph metadata (optional)
-  description: 'Uma lista de design System construídos no Brasil!',
+  description: 'Uma lista de Design Systems construídos no Brasil!',
   socialImageTitle: 'Design Systems Brasileiros',
   socialImageSubtitle: 'Uma lista de Design Systems construídos no Brasil! 🇧🇷',
 
