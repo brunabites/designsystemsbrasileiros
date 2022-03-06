@@ -18,7 +18,7 @@ module.exports = {
   socialImageSubtitle: 'Uma lista de Design Systems construídos no Brasil! 🇧🇷',
 
   // social usernames (optional)
-  // twitter: 'transitive_bs',
+  // twitter: 'brunabites',
   github: 'designsystemsbrasileiros',
   linkedin: 'brunabites',
 
