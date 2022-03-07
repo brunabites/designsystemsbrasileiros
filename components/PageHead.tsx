@@ -25,22 +25,15 @@ export const PageHead: React.FC<types.PageProps> = ({ site }) => {
       <meta property='og:type' content='website' />
       <meta property='og:image' content='https://designsystemsbrasileiros.com/social.png'/>
       
-      <script
-      async
-      src={`https://www.googletagmanager.com/gtag/js?id=UA_CODE`}
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9SKBCNJ0S"></script>
+      <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'UA_CODE', {
-          page_path: window.location.pathname,
-        });
-      `,
-        }}
-      />
+
+        gtag('config', 'G-F9SKBCNJ0S');
+      </script>
 
     </Head>
   )
