@@ -35,9 +35,10 @@ import 'prismjs/components/prism-typescript'
 import 'prismjs/components/prism-bash'
 
 import React from 'react'
-import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { bootstrap } from 'lib/bootstrap-client'
+import { fathomId, fathomConfig } from 'lib/config'
+import * as Fathom from 'fathom-client'
 
 if (typeof window !== 'undefined') {
   bootstrap()
