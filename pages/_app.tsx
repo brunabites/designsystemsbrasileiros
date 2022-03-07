@@ -35,11 +35,10 @@ import 'prismjs/components/prism-typescript'
 import 'prismjs/components/prism-bash'
 
 import React from 'react'
-import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { bootstrap } from 'lib/bootstrap-client'
 import { fathomId, fathomConfig } from 'lib/config'
-import * as ga from 'lib/ga'
+import * as Fathom from 'fathom-client'
 
 if (typeof window !== 'undefined') {
   bootstrap()
@@ -48,18 +47,21 @@ if (typeof window !== 'undefined') {
 export default function App({ Component, pageProps }) {
   const router = useRouter()
 
-  useEffect(() => {
-    const handleRouteChange = url => {
-      window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
-        page_path: url,
-      })
+  React.useEffect(() => {
+    if (fathomId) {
+      Fathom.load(fathomId, fathomConfig)
+
+      function onRouteChangeComplete() {
+        Fathom.trackPageview()
+      }
+
+      router.events.on('routeChangeComplete', onRouteChangeComplete)
+
+      return () => {
+        router.events.off('routeChangeComplete', onRouteChangeComplete)
+      }
     }
-    router.events.on('routeChangeComplete', handleRouteChange)
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
+  }, [])
 
   return <Component {...pageProps} />
-}
 }
