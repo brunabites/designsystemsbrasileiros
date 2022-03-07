@@ -24,17 +24,7 @@ export const PageHead: React.FC<types.PageProps> = ({ site }) => {
       <meta name='theme-color' content='#EB625A' />
       <meta property='og:type' content='website' />
       <meta property='og:image' content='https://designsystemsbrasileiros.com/social.png'/>
-      
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9SKBCNJ0S"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-F9SKBCNJ0S');
-      </script>
-
+     
     </Head>
   )
 }
