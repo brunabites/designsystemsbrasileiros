@@ -47,6 +47,24 @@ if (typeof window !== 'undefined') {
 export default function App({ Component, pageProps }) {
   const router = useRouter()
 
+  // GA Analytics
+  React.useEffect(() => {
+    const script = document.createElement("script")
+    script.innerHTML = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F9SKBCNJ0S');
+    `
+    script.async = true
+    script.type = "text/javascript"
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script)
+    }
+  })
+
   React.useEffect(() => {
     if (fathomId) {
       Fathom.load(fathomId, fathomConfig)

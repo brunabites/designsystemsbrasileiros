@@ -43,6 +43,8 @@ export default class MyDocument extends Document {
             <Main />
 
             <NextScript />
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9SKBCNJ0S"/>
+           
           </body>
         </Html>
       </IconContext.Provider>
