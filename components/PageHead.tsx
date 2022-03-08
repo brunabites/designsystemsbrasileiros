@@ -21,10 +21,12 @@ export const PageHead: React.FC<types.PageProps> = ({ site }) => {
         </>
       )}
 
-      <meta name='theme-color' content='#EB625A' />
+      <meta name='theme-color' content='#048566' />
       <meta property='og:type' content='website' />
       <meta property='og:image' content='https://designsystemsbrasileiros.com/social.png'/>
-     
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:image' content='https://designsystemsbrasileiros.com/social.png' />
+
     </Head>
   )
 }
