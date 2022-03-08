@@ -3,7 +3,7 @@ A list of Design Systems built in Brazil 🇧🇷
 
 ## Intro
 
-This repo is used to power the site [Design Systems Brasileiros](https://designsystemsbrasileiros.com). If you would like to suggest a Design System, please fill in [this form](https://fo05bn7uchm.typeform.com/to/jAAvtMBf).
+This repo is used to power the site [Design Systems Brasileiros](https://designsystemsbrasileiros.com). If you would like to suggest a Design System, please fill in [this form](https://forms.gle/wDTJ14CzUWtJYekG8).
 
 
 ## About the repo / License
