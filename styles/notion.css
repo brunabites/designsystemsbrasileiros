@@ -170,7 +170,7 @@
 
 .notion-hr {
   border-color: var(--bg-color-1);
-  border-top-color: var(--bg-color-0);
+  border-top-color: var(--bg-color-1);
   margin: 2em 0;
 }
 
