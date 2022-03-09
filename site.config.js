@@ -19,7 +19,7 @@ module.exports = {
 
   // social usernames (optional)
   // twitter: 'brunabites',
-  github: 'designsystemsbrasileiros',
+  github: 'brunabites/designsystemsbrasileiros',
   linkedin: 'brunabites',
 
   // default notion icon and cover images for site-wide consistency (optional)
